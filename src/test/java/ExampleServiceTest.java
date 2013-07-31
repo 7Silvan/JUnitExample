@@ -11,14 +11,5 @@ public class ExampleServiceTest {
 			Double.doubleToLongBits(result)
 		);
 	}
-	
-	@Test
-	public void subtractTest() {
-		double result = new ExampleService().subtract(1, 1);
-		Assert.assertEquals(
-			Double.doubleToLongBits(0), 
-			Double.doubleToLongBits(result)
-		);
-	}
 
 }
