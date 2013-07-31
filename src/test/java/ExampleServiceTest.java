@@ -5,7 +5,7 @@ public class ExampleServiceTest {
 
 	@Test
 	public void addTest() {
-		double result = ExampleService.add(1, 1);
+		double result = new ExampleService().add(1, 1);
 		Assert.assertEquals(
 			Double.doubleToLongBits(2), 
 			Double.doubleToLongBits(result)
@@ -14,7 +14,7 @@ public class ExampleServiceTest {
 	
 	@Test
 	public void subtractTest() {
-		double result = ExampleService.subtract(1, 1);
+		double result = new ExampleService().subtract(1, 1);
 		Assert.assertEquals(
 			Double.doubleToLongBits(0), 
 			Double.doubleToLongBits(result)
